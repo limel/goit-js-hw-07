@@ -4,9 +4,6 @@ console.dir(categoriesRef);
 const itemsRef = document.querySelectorAll('.item');
 console.dir(itemsRef);
 
-// const titleRef = document.querySelector('h2');
-// console.dir(titleRef);
-
 console.log(`в списке ${itemsRef.length} категории`);
 
 itemsRef.forEach(item =>
