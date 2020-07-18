@@ -18,3 +18,46 @@
 // должен быть шире и выше предыдущего на 10px
 // Создай функцию destroyBoxes(),
 // которая очищает div#boxes.
+const controlsInputRef = document.querySelector('#controls>input');
+const controlsRenderRef = document.querySelector(
+  'button[data-action="render"]',
+);
+const controlsDesRef = document.querySelector('button[data-action="destroy"]');
+const boxesRef = document.querySelector('#boxes');
+
+function randomColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}+${g}+${b})`;
+}
+
+function creatBoxes(amount) {
+  console.log(amount);
+  const newBoxes = [];
+  console.log(newBoxes);
+  for (
+    let i = 0;
+    i < amount && i < Number(controlsInputRef.getAttribute('max'));
+    i += 1
+  ) {
+    const newBox = document.createElement('div');
+    newBox.style.width = `${30 + i * 10}px`;
+    newBox.style.height = `${30 + i * 10}px`;
+    newBox.style.backgroundColor = randomColor();
+    newBoxes.push(newBox);
+  }
+  console.log(newBoxes);
+  boxesRef.append(...newBoxes);
+}
+
+function deleteBoxes() {
+  boxesRef.innerHTML = '';
+  controlsInputRef.value = '';
+}
+
+controlsRenderRef.addEventListener('click', () =>
+  creatBoxes(controlsInputRef.value),
+);
+
+controlsDesRef.addEventListener('click', deleteBoxes);
