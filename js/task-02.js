@@ -13,6 +13,7 @@ const createdIngredientsList = function(ingredient) {
   console.log(ingredient);
 
   const ingredientItem = document.createElement('li');
+  ingredientItem.classList.add('ingredients__item');
   ingredientItem.textContent = ingredient;
   return ingredientItem;
 };

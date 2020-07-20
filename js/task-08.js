@@ -45,6 +45,7 @@ function creatBoxes(amount) {
     newBox.style.width = `${30 + i * 10}px`;
     newBox.style.height = `${30 + i * 10}px`;
     newBox.style.backgroundColor = randomColor();
+    newBox.classList.add('boxes__item');
     newBoxes.push(newBox);
   }
   console.log(newBoxes);

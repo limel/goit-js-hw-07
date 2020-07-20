@@ -1,4 +1,7 @@
 const valueCounterRef = document.querySelector('#value');
+const counterBoxRef = document.querySelector('#counter');
+counterBoxRef.classList.add('counter__container');
+valueCounterRef.classList.add('counter__value');
 const incrementBtnRef = document.querySelector(
   'button[data-action="increment"]',
 );

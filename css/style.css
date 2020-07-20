@@ -3,6 +3,74 @@ img {
   height: auto;
 }
 
+/* main page style */
+
+.tasks {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+
+.tasks__link {
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  width: 100px;
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.tasks__link:hover {
+  background-color: rgba(98, 75, 139, 0.459);
+  transition: 300ms;
+}
+
+.tasks__link--backlink {
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+/*  */
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+/* task 02 style */
+
+#ingredients {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+}
+
+.ingredients__item {
+  padding: 5px;
+  margin: 5px;
+  font-size: 22px;
+}
+
+/* task-03 style */
+
 .gallery__list {
   display: flex;
   flex-wrap: wrap;
@@ -16,14 +84,41 @@ img {
   border-radius: 10%;
 }
 
-#validation-input {
-  border: 3px solid #bdbdbd;
+/* task 04 style */
+
+.counter__container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
-#validation-input.valid {
-  border-color: #4caf50;
+.counter__value {
+  margin: 0 15px 0 15px;
 }
 
-#validation-input.invalid {
-  border-color: #f44336;
+/* task 05 style */
+
+.input-area {
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* tasks-08 style  */
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boxes__item {
+  margin-bottom: 15px;
 }
