@@ -38,20 +38,6 @@ img {
   margin-top: 60px;
 }
 
-/*  */
-
-#validation-input {
-  border: 3px solid #bdbdbd;
-}
-
-#validation-input.valid {
-  border-color: #4caf50;
-}
-
-#validation-input.invalid {
-  border-color: #f44336;
-}
-
 /* task 02 style */
 
 #ingredients {
@@ -107,6 +93,20 @@ img {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+/* task 06 style */
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
 }
 
 /* tasks-08 style  */
